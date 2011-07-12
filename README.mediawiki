@@ -11,4 +11,10 @@ $ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -De
 
 List injection
 $ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -Dexec.args='ListInjection.xml'
+
+Map injection
+$ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -Dexec.args='MapInjection.xml'
+
 </pre>
+
+

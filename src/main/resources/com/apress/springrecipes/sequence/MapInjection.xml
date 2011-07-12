@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+ 
+    <bean id="sequenceGenerator" class="com.apress.springrecipes.sequence.MapSequenceGenerator">
+     <property name="prefix" value="30"/> 
+        <property name="initial" value="100000"/>
+        <property name="suffixes">
+              <map>
+                  <entry>
+                      <key> 
+                          <value>type</value>
+                      </key>
+                      <value>A</value>
+                  </entry>
+                  <entry>
+                      <key>
+                          <value>url</value>
+                      </key>
+                      <bean class="java.net.URL">
+                          <constructor-arg value="http"/>
+                          <constructor-arg value="www.apress.com"/>
+                          <constructor-arg value="/"/>
+                      </bean>
+                  </entry>
+              </map>
+        </property>
+ 
+    </bean>
+    
+</beans>
