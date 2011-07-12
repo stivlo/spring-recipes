@@ -6,7 +6,7 @@
     <!-- using bean id instead of bean name allows it to be validated and guaranteed unique. id is more
          restrictive than name.
      -->
-    <bean name="sequenceGenerator" class="com.apress.springrecipes.sequence.SequenceGenerator">
+    <bean name="sequenceGenerator" class="com.apress.springrecipes.sequence.SimpleSequenceGenerator">
         <!-- setter injection -->
         <property name="prefix">
              <value>30</value>

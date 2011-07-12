@@ -9,7 +9,11 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        String config = "com/apress/springrecipes/sequence/Main.xml";
+        if (args.length != 1) {
+            System.out.println("Provide one argument with the xml file name to load");
+            return;
+        }
+        String config = "com/apress/springrecipes/sequence/" + args[0];
         ApplicationContext context = new ClassPathXmlApplicationContext(config);
         SequenceGenerator generator = (SequenceGenerator) context.getBean("sequenceGenerator");
         System.out.println(generator.getSequence());

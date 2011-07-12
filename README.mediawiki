@@ -4,8 +4,11 @@ $ mvn compile
 
 <pre>
 Load a basic bean, with property injection
-$ mvn -q exec:java -Dexec.mainClass="com.apress.springrecipes.sequence.Main"
+$ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -Dexec.args='Main.xml'
 
 The same thing, with the p-schema shortcut
-mvn -q exec:java -Dexec.mainClass="com.apress.springrecipes.sequence.MainWithPSchema"
+$ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -Dexec.args='MainWithPSchema.xml'
+
+List injection
+$ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -Dexec.args='ListInjection.xml'
 </pre>
