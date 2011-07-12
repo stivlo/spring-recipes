@@ -9,7 +9,8 @@ public class Main {
      * @param args
      */
     public static void main(String[] args) {
-        ApplicationContext context = new ClassPathXmlApplicationContext();
+        String config = "com/apress/springrecipes/sequence/Main.xml";
+        ApplicationContext context = new ClassPathXmlApplicationContext(config);
         SequenceGenerator generator = (SequenceGenerator) context.getBean("sequenceGenerator");
         System.out.println(generator.getSequence());
         System.out.println(generator.getSequence());

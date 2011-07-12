@@ -70,6 +70,12 @@
             <version>1.8.5</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>commons-logging</groupId>
+            <artifactId>commons-logging</artifactId>
+            <version>1.1.1</version>
+        </dependency>
         
         <!-- spring framework configuration start -->
          
