@@ -20,8 +20,20 @@ public class Reservation {
         this.sportType = sportType;
     }
 
-    public Object getCourtName() {
+    public String getCourtName() {
         return courtName;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public int getHour() {
+        return hour;
+    }
+
+    public Player getPlayer() {
+        return player;
     }
 
     @Override

@@ -22,7 +22,7 @@ Court Name <input type="text" name="courtName" value="${courtName}"/>
         <th>Hour</th>
         <th>Player</th>
     </tr>
-    <c:forEach items="${reservations}" var="reservations">
+    <c:forEach items="${reservations}" var="reservation">
     <tr>
         <td>${reservation.courtName}</td>
         <td><fmt:formatDate value="${reservation.date}" pattern="yyyy-MM-dd"/></td>

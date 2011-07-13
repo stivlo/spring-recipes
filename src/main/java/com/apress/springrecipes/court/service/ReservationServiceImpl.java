@@ -24,6 +24,8 @@ public class ReservationServiceImpl implements ReservationService {
                 new Player("Roger", "N/A"), TENNIS));
         reservations.add(new Reservation("Tennis #2", new GregorianCalendar(2008, 0, 14).getTime(), 0,
                 new Player("James", "N/A"), TENNIS));
+        reservations.add(new Reservation("Soccer #1", new GregorianCalendar(2008, 1, 14).getTime(), 0,
+                new Player("Pascal", "N/A"), SOCCER));
     }
 
     @Override

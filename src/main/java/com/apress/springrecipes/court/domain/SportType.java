@@ -10,6 +10,10 @@ public class SportType {
         this.name = name;
     }
 
+    public int getId() {
+        return id;
+    }
+
     @Override
     public String toString() {
         return name;

@@ -15,6 +15,16 @@ $ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -De
 Map injection
 $ mvn -q exec:java -Dexec.mainClass='com.apress.springrecipes.sequence.Main' -Dexec.args='MapInjection.xml'
 
+Spring MVC
+
+Should work with Tomcat 5.5+, in Eclipse choose Run As > Run on Server, URL may change, typically on a local installation:
+
+Simplest Servlet
+http://localhost:8080/spring-recipes/welcome
+
+Example of Search, Try with "Tennis #1", "Tennis  #2"
+http://localhost:8080/spring-recipes/reservationQuery
+
 </pre>
 
 

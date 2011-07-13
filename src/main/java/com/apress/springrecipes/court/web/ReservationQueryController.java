@@ -25,6 +25,7 @@ public class ReservationQueryController {
 
     @RequestMapping(method = RequestMethod.GET)
     public void setupForm() {
+        //nothing to do
     }
 
     @RequestMapping(method = RequestMethod.POST)
@@ -33,7 +34,7 @@ public class ReservationQueryController {
         if (courtName != null) {
             reservations = reservationService.query(courtName);
         }
-        model.addAttribute("reservation", reservations);
+        model.addAttribute("reservations", reservations);
         return "reservationQuery";
     }
 
