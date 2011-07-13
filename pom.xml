@@ -77,6 +77,13 @@
             <version>1.1.1</version>
         </dependency>
         
+        <dependency>
+           <groupId>javax.servlet</groupId>
+           <artifactId>jstl</artifactId>
+           <version>1.2</version>
+           <!--  <scope>provided</scope> -->
+        </dependency>
+        
         <!-- spring framework configuration start -->
          
         <!-- 
