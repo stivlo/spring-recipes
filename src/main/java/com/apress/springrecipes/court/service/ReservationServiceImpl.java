@@ -22,9 +22,9 @@ public class ReservationServiceImpl implements ReservationService {
         reservations = new ArrayList<Reservation>();
         reservations.add(new Reservation("Tennis #1", new GregorianCalendar(2008, 0, 14).getTime(), 16,
                 new Player("Roger", "N/A"), TENNIS));
-        reservations.add(new Reservation("Tennis #2", new GregorianCalendar(2008, 0, 14).getTime(), 0,
+        reservations.add(new Reservation("Tennis #2", new GregorianCalendar(2008, 0, 14).getTime(), 20,
                 new Player("James", "N/A"), TENNIS));
-        reservations.add(new Reservation("Soccer #1", new GregorianCalendar(2008, 1, 14).getTime(), 0,
+        reservations.add(new Reservation("Soccer #1", new GregorianCalendar(2008, 1, 14).getTime(), 14,
                 new Player("Pascal", "N/A"), SOCCER));
     }
 
