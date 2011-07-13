@@ -2,6 +2,8 @@ package com.apress.springrecipes.court.domain;
 
 import java.util.Date;
 
+import org.obliquid.helpers.DateHelper;
+
 public class Reservation {
 
     private String courtName;
@@ -20,6 +22,11 @@ public class Reservation {
 
     public Object getCourtName() {
         return courtName;
+    }
+
+    @Override
+    public String toString() {
+        return courtName + " " + DateHelper.formatIsoDate(date) + " " + hour + " " + player + " " + sportType;
     }
 
 }

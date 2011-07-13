@@ -19,7 +19,7 @@ public class ReservationQueryController {
     private ReservationService reservationService;
 
     @Autowired
-    public void ReservationQueryController(ReservationService reservationService) {
+    public ReservationQueryController(ReservationService reservationService) {
         this.reservationService = reservationService;
     }
 

@@ -10,4 +10,9 @@ public class Player {
         this.phone = phone;
     }
 
+    @Override
+    public String toString() {
+        return name;
+    }
+
 }

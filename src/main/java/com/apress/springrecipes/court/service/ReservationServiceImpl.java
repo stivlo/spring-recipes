@@ -4,14 +4,17 @@ import java.util.ArrayList;
 import java.util.GregorianCalendar;
 import java.util.List;
 
+import org.apache.log4j.Logger;
+
 import com.apress.springrecipes.court.domain.Player;
 import com.apress.springrecipes.court.domain.Reservation;
 import com.apress.springrecipes.court.domain.SportType;
 
 public class ReservationServiceImpl implements ReservationService {
 
-    public static final SportType TENNIS = new SportType(1, "Tennis");
-    public static final SportType SOCCER = new SportType(2, "Soccer");
+    private static final SportType TENNIS = new SportType(1, "Tennis");
+    private static final SportType SOCCER = new SportType(2, "Soccer");
+    private static final Logger log = Logger.getLogger(ReservationServiceImpl.class);
 
     private List<Reservation> reservations;
 
@@ -27,10 +30,12 @@ public class ReservationServiceImpl implements ReservationService {
     public List<Reservation> query(String courtName) {
         List<Reservation> result = new ArrayList<Reservation>();
         for (Reservation reservation : reservations) {
+            log.info(reservation.getCourtName() + ".equals(" + courtName + ")");
             if (reservation.getCourtName().equals(courtName)) {
                 result.add(reservation);
             }
         }
+        log.info(result);
         return result;
     }
 

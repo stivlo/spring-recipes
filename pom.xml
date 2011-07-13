@@ -76,12 +76,27 @@
             <artifactId>commons-logging</artifactId>
             <version>1.1.1</version>
         </dependency>
-        
+
+        <dependency>
+            <groupId>org.obliquid</groupId>
+            <artifactId>obliquid-lib</artifactId>
+            <version>0.9.6-SNAPSHOT</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- JSTL for Tomcat 5.5, for Tomcat 6.0+, version 1.2 -->
         <dependency>
            <groupId>javax.servlet</groupId>
            <artifactId>jstl</artifactId>
-           <version>1.2</version>
+           <version>1.1.2</version>  
            <!--  <scope>provided</scope> -->
+        </dependency>
+        
+        <!-- standard.jar, required only for JSTL 1.1 -->
+        <dependency>
+            <groupId>taglibs</groupId>
+            <artifactId>standard</artifactId>
+            <version>1.1.2</version>
         </dependency>
         
         <!-- spring framework configuration start -->
