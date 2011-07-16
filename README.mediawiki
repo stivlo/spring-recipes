@@ -25,6 +25,12 @@ http://localhost:8080/spring-recipes/welcome
 Example of Search, Try with "Tennis #1", "Tennis  #2"
 http://localhost:8080/spring-recipes/reservationQuery
 
+Mapping /member/* to different class methods:
+http://localhost:8080/spring-recipes/member/add
+http://localhost:8080/spring-recipes/member/remove
+http://localhost:8080/spring-recipes/member/delete
+http://localhost:8080/spring-recipes/member/jdoe
+
 </pre>
 
 
