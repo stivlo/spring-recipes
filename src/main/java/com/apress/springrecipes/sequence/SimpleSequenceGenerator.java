@@ -7,15 +7,15 @@ public class SimpleSequenceGenerator implements SequenceGenerator {
     private int initial;
     private int counter;
 
-    public void setPrefix(String prefix) {
+    public synchronized void setPrefix(String prefix) {
         this.prefix = prefix;
     }
 
-    public void setSuffix(String suffix) {
+    public synchronized void setSuffix(String suffix) {
         this.suffix = suffix;
     }
 
-    public void setInitial(int initial) {
+    public synchronized void setInitial(int initial) {
         this.initial = initial;
     }
 

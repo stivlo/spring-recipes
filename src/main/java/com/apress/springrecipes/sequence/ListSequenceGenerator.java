@@ -9,15 +9,15 @@ public class ListSequenceGenerator implements SequenceGenerator {
     private int counter;
     private List<Object> suffixes;
 
-    public void setPrefix(String prefix) {
+    public synchronized void setPrefix(String prefix) {
         this.prefix = prefix;
     }
 
-    public void setInitial(int initial) {
+    public synchronized void setInitial(int initial) {
         this.initial = initial;
     }
 
-    public void setSuffixes(List<Object> suffixes) {
+    public synchronized void setSuffixes(List<Object> suffixes) {
         this.suffixes = suffixes;
     }
 
