@@ -16,5 +16,7 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
-      
+    
+    <bean id="restTemplate" class="org.springframework.web.client.RestTemplate"/>
+     
 </beans>
